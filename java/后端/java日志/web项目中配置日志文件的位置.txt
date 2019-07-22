@@ -1,0 +1,8 @@
+1、{catalina.home} == 表示tomcat的路径
+2、在项目的web.xml中配置webAppRootKey的初始化参数值，当同个tomcat下部署多个web应用时，配置webAppRootKey用于标示该项目
+ <context-param>
+    <param-name>webAppRootKey</param-name>
+    <param-value>project.root</param-value><!-- 用于定位log文件输出位置在web应用根目录下，log4j配置文件中写输出位置：log4j.appender.FILE.File=${project.root}/logs/project.log -->
+</context-param>
+
+则在log配置文件中可以获取到当前项目的路径:{project.root}
