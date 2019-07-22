@@ -1,0 +1,13 @@
+优化学习网址：https://baijiahao.baidu.com/s?id=1628437659593476871&wfr=spider&for=pc
+
+1、检索时不要使用select * ，当数据库的字段多并数据量过大时，查询效率会降低
+2、使用exists、between替代in  使用union替代not in
+	in与exists的分析：https://www.cnblogs.com/liyasong/p/sql_in_exists.html
+	区别：in==先执行子查询并将结果集进行缓存然后判断主表数据，即当子表内容较少时适合in
+				existis==先执行主表查询，然后对子表的结果进行比对存在返回true不存在返回false。即当主表内容较少时适合。
+				in与exists的关键区别在于执行驱动顺序
+				
+				not in与not exists比较直接选择not exists，因为not in 会对主子表都进行全表扫描，而not exists仍以主表为驱动表
+	
+3、where左侧尽量不要使用表达式，表达式都放在右侧
+4.where中不要使用1=1用于拼接查询条件，这样会造成全表扫描。替换成<where>标签即可

@@ -1,0 +1,10 @@
+1、fontawesome  ---fa
+	http://www.runoob.com/font-awesome/fontawesome-reference.html
+2、icon
+	http://www.runoob.com/ionic/ionic-icon.html
+3、jquery-ui
+	http://www.runoob.com/jqueryui/api-icons.html
+4、h-ui
+	https://www.h-ui.net/Hui-3.7-icon.shtml
+5、icon开头的小图标
+	https://www.bootcss.com/p/font-awesome/design.html
