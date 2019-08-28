@@ -1,0 +1,5 @@
+一、yum 【在线安装指令】
+二、wget 【下载指令】
+  1.yum install wget 【安装wget指令】
+  2.wget -p /downlaod/tomcat http://tomcat下载路径【将http的tomcat安装包下载到指定路径download/tomcat路径下】
+    wget http://tomcat下载路径 【不指定文件的存储路径  将使用默认路径  默认路径的位置 目前不清楚 后期了解后再补充】
